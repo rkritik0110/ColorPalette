@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Color Palette Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Color Palette Generator</h1>
+        
+        <div class="controls">
+            <button class="btn" onclick="generateRandomPalette()">✨ Generate Random</button>
+            <button class="btn" onclick="generateWarmPalette()">🔥 Warm Tones</button>
+            <button class="btn" onclick="generateCoolPalette()">❄️ Cool Tones</button>
+            <button class="btn" onclick="generateMonochrome()">⚫ Monochrome</button>
+        </div>
+        
+        <div class="palette-container" id="paletteContainer">
+        </div>
+        
+        <div class="stats">
+            <div class="stat">
+                <span class="stat-number" id="palettesGenerated">0</span>
+                <span class="stat-label">Palettes Generated</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number" id="colorsClicked">0</span>
+                <span class="stat-label">Colors Copied</span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="notification" id="notification">
+        Color copied to clipboard! 🎉
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
